@@ -1,4 +1,4 @@
-*.python linguist-language=python
+*.ipnyb linguist-language=python
 
 # *.python linguist-language=python
 # *.ipynb linguist-documentation
