@@ -1,4 +1,5 @@
 # *.python linguist-language=python
 # *.ipynb linguist-documentation
 # *.ipnyb linguist-detectable=false
-*.ipynb linguist-vendored=python
+# *.ipynb linguist-vendored
+*.python linguist-vendored
