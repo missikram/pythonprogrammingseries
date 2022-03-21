@@ -1,0 +1,175 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "P1: Introduction at Hogwarts",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNSonVyU+7kfAx4rTWSPL5A"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### **The Object Oriented Programming (OOP) has the following basic principles:**\n",
+        "\n",
+        "- **Class:** A blueprint for the object.\n",
+        "- **Inheritance:** A process of using details from a new class without modifying existing class.\n",
+        "- **Encapsulation:** Hiding the private details of a class from other objects.\n",
+        "- **Polymorphism:** A concept of using common operation in different ways for different data input.\n"
+      ],
+      "metadata": {
+        "id": "xmefhMEZnbXH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "id": "IvW5C5vqm0L8"
+      },
+      "outputs": [],
+      "source": [
+        "class potterhead:\n",
+        "    #class attribute\n",
+        "    affiliation = \"Hogwarts\"\n",
+        "    \n",
+        "    def __init__(self,name,group,task):\n",
+        "        #instance attribute\n",
+        "        self.name = name\n",
+        "        self.group = group #Hufflepuff\n",
+        "        self.task = task #spells\n",
+        "        \n",
+        "    def introduce(self):\n",
+        "        print(\"I am learning magic at {}.\".format(self.group))\n",
+        "    \n",
+        "    def work(self):\n",
+        "        print(\"I love saying {}!\".format(self.task));"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "me = potterhead(\"I\",\"Ravenclaw\", \"spells\")\n",
+        "me.introduce()\n",
+        "me.work()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R4W423qApRUq",
+        "outputId": "1b2743db-4547-4020-d32f-105deaa7f5d4"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am learning magic at Ravenclaw.\n",
+            "I love saying spells!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "him = potterhead(\"he\",\"Gryffindor\", \"spells\")\n",
+        "him.introduce()\n",
+        "him.work()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e_N2FDMqp3_Q",
+        "outputId": "cc7294c3-a52b-4ea8-b252-21c6e45c419a"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am learning magic at Gryffindor.\n",
+            "I love saying spells!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# access the class attributes\n",
+        "print(\"I am a {}\".format(me.__class__.affiliation))\n",
+        "print(\"He is also a {}\".format(him.__class__.affiliation))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IQ48ynihploe",
+        "outputId": "c2c9448f-5d41-4288-ad0c-6021b554d525"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am a Hogwarts\n",
+            "He is also a Hogwarts\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# access the instance attributes\n",
+        "print(\"{} learn to say spells at {}.\".format( me.name, me.group))\n",
+        "print(\"{} learns to say spells at {}.\".format( him.name, him.group))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6IkFRaHopt9h",
+        "outputId": "baf136d6-cead-482b-aa82-cd87876297c9"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I learn to say spells at Ravenclaw.\n",
+            "he learns to say spells at Gryffindor.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "Dkq7GWGTrTRZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
