@@ -1,0 +1,4 @@
+*.ipynb linguist-vendored
+
+# *.ipynb linguist-documentation
+# *.ipnyb linguist-language=python
